@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Weather Report</title>
+</head>
+<body>
+    <h1>Weather Report (Temperature & Humidity)</h1>
+    <div class="meta">
+        <div><strong>Location:</strong> {{ lat }}, {{ lon }}</div>
+        <div><strong>Period (UTC):</strong> {{ start.strftime("%Y-%m-%d %H:%M") }} → {{ end.strftime("%Y-%m-%d %H:%M") }}</div>
+        <div><strong>Generated at (UTC):</strong> {{ generated_at.strftime("%Y-%m-%d %H:%M") }}</div>
+    </div>
+
+    <div class="chart">
+        <img alt="Weather Chart" src="data:image/png;base64,{{ chart_b64 }}">
+    </div>
+
+    <div class="footer">
+        Data source: Open-Meteo MeteoSwiss hourly API
+    </div>
+</body>
+</html>
