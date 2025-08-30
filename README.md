@@ -34,10 +34,9 @@ docker-compose up --build
 
 
 
+## For reference Git commands for pushing the code to Github
 
-##For reference Git commands for pushing the code to Github
-
-Open your terminal and run these commands:
+Open your terminal and run these commands for pushing your code to the github:
 
 ```bash
 # Navigate to your project folder
